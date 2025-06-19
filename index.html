@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Xe Tải</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header-placeholder"></div>
+
+  <!-- NỘI DUNG -->
+  <main class="" id="main-content">Đang tải...</main>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- SCRIPT -->
+  <script>
+    const loadComponents = () => {
+      fetch('components/header.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('header-placeholder').innerHTML = html);
+
+      fetch('components/footer.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('footer-placeholder').innerHTML = html);
+    };
+
+    const loadPage = (page) => {
+      fetch('pages/' + page)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('main-content').innerHTML = html;
+          window.history.pushState({}, "", page);
+        })
+        .catch(() => document.getElementById('main-content').innerHTML = '<div class="alert alert-danger">Không tải được trang!</div>');
+    };
+
+    window.onload = () => {
+      loadComponents();
+      loadPage('index.html'); // Trang mặc định
+    };
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/  -bundle.min.js"></script>
+  <script src="/js/animate.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.product-list').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: { slidesToShow: 3 }
+          },
+          {
+            breakpoint: 480,
+            settings: { slidesToShow: 2 }
+          }
+        ]
+      });
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    (function ($) {
+      "use strict";
+
+      //Page cursors
+
+      document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
+        t.style.left = n.clientX + "px",
+          t.style.top = n.clientY + "px",
+          e.style.left = n.clientX + "px",
+          e.style.top = n.clientY + "px",
+          i.style.left = n.clientX + "px",
+          i.style.top = n.clientY + "px"
+      });
+      var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+      function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+      }
+      function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+      }
+      s();
+      for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+      }
+      function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+      }
+
+      $(document).ready(function () {
+
+        /* Hero Case study images */
+
+        $('.case-study-name:nth-child(1)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(1)').addClass("show");
+          $('.case-study-name:nth-child(1)').addClass('active');
+        })
+        $('.case-study-name:nth-child(2)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(2)').addClass("show");
+          $('.case-study-name:nth-child(2)').addClass('active');
+        })
+        $('.case-study-name:nth-child(3)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(3)').addClass("show");
+          $('.case-study-name:nth-child(3)').addClass('active');
+        })
+        $('.case-study-name:nth-child(4)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(4)').addClass("show");
+          $('.case-study-name:nth-child(4)').addClass('active');
+        })
+        $('.case-study-name:nth-child(1)').trigger('mouseenter')
+
+      });
+    })(jQuery); 
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
