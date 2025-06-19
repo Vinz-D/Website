@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="vi" data-color-scheme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vuong Doan</title>
+  <!-- boottraps -->
+  <link rel="stylesheet" href="/css/all.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!--End boottraps -->
+    <!-- <link rel="stylesheet" href="/css/base.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- Slicky -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Banner -->
+
+  <!-- End Banner -->
+  <!-- Offcanvas Menu Mobile -->
+  <div class="offcanvas offcanvas-end" id="mobileMenu" style="border: none;">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-3" style="margin: 25px;">
+      <a href="#" class="text-dark text-decoration-none">TRANG CHỦ</a>
+      <a href="#" class="text-dark text-decoration-none">GIỚI THIỆU</a>
+      <a href="#" class="text-dark text-decoration-none">SẢN PHẨM</a>
+      <a href="#" class="text-dark text-decoration-none">DỊCH VỤ</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade modal-form" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-column">
+          <img src="../img/logo-fb.png" alt="Logo" class="mb-2 inner-image" style="height: 60px" />
+          <h5 class="modal-title inner-tittle">
+            Gửi yêu cầu tư vấn miễn phí
+          </h5>
+          <p class="inner-decs">
+            38.000+ doanh nghiệp & chủ shop đã tin dùng
+          </p>
+          <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Họ Và Tên *" />
+                </div>
+              </div>
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Số Điện Thoại *" />
+                </div>
+              </div>
+              <div class="col-12 inner-decs">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nội Dung *" />
+                  <div class="col-12">
+                    <button class="button">Gửi ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Nội dung -->
+  <div class="section-two">
+    <div class="container mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 inner-decs wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+          <p>
+            Các sản phẩm xe tải, xe ben, xe đầu kéo, xe chuyên dùng và xe năng
+            lượng mới được nhập khẩu và phân phối chính hãng, chất lượng tuyệt
+            đối. Giá thành rẻ nhất đi kèm các chương trình khuyến mãi hấp dẫn.
+            Quy trình bảo hành, bảo dưỡng, sửa chữa và cung cấp phụ tùng đạt
+            tiêu chuẩn toàn cầu của các hãng xe, đáp ứng mọi nhu cầu của quý
+            khách hàng.
+          </p>
+        </div>
+        <div class="col-md-6 inner-picture wow fadeInRight " data-wow-duration="1s" data-wow-delay="0.3s">
+          <img src="../img/sectionbot.jpg" class="img-fluid rounded" alt="Ảnh sản phẩm" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-two-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 inner-order">
+          <div class="inner-picture">
+            <img src="../img/picture-two.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 ">
+          <div class="inner-decs">
+            <h2>Connect to social media in seconds</h2>
+            <p> Already using Facebook? That makes it even easier to build your online portfolio. Pull in photos right
+              from your existing accounts, so your website is ready in a snap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-loaixe">
+    <div class="container-xl">
+      <h2 class="box-tittle">Danh sách xe tải</h2>
+      <div class="inner-box-inline">
+      </div>
+      <p></p>
+      <div class="panel-group">
+        <!-- Accordion 1 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse1"></em>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="/img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion 2 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse2">
+                TỪ 3,5 TẤN - 4 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse2"></em>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">NQR 550 THÙNG BỬNG NHÔM INOX 304 - MẪU 7
+                      BỬNG</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion 3 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse3">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse3"></em>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion 4 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse4">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse4"></em>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion 5 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse5">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse5"></em>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion 6 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse6">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse6"></em>
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion 7 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse7">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse7"></em>
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion 8 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse8">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse8"></em>
+            </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion 9 -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" href="#collapse9">
+                TỪ 900KG - 3 TẤN
+              </a>
+              <em class="accordion-toggle fa fa-chevron-down " data-toggle="collapse" href="#collapse9"></em>
+            </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse in">
+            <div class="panel-body ">
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="inner-product">
+                  <div class="inner-image">
+                    <a href="">
+                      <img src="../img/img_1718161612018_o_1i056j77fp411g5un2hq1t15di8.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="inner-tittle">
+                    <a href="">Xe tải Hyundai MIGHTY W11SP - 2025</a> <br>
+                    <p class="inner-contact">Liên hệ 095115164664</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End các mẫu xe -->
+  <!-- Google Map -->
+  <div class="google-map">
+    <div class="inner-top">
+      <h2 class="box-tittle wow zoomIn">Show Room</h2>
+      <div class="inner-box-inline">
+      </div>
+      <p class="inner-box-decs">Địa chỉ: 579, QL 1A, Tổ 18, Ấp Ngũ Phúc, Xã Hố Nai 3, H. Trảng Bom, Đồng Nai
+      </p>
+      <p class="inner-box-decs">Thứ 2 đến Thứ 6: Từ 7h30 đến 17h
+        Thứ 7: Từ 7h30 đến 16h</p>
+      <p class="inner-box-decs">Điện thoại: 0901.308.178 – 0919.863.279
+        Fax: 02513 984 028
+      </p>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.972546022007!2d106.9225955742251!3d10.965444755680458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174e744c3862473%3A0x4da31733f53d4495!2zw5QgVMO0IEhvw6AgUGjDumM!5e0!3m2!1svi!2s!4v1681530524897!5m2!1svi!2s"
+      width="100%" height="650" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- End Google Map -->
+  <!-- section-four -->
+  <div class="section-four">
+    <div class="container">
+      <div class="row">
+        <div class="inner-top">
+          <h2 class="box-tittle wow zoomIn">Talk To Us</h2>
+          <div class="inner-box-inline">
+          </div>
+          <p class="inner-box-decs">Nơi chia sẻ kiến thức quản lý và bán hàng trên website thiết thực nhất</p>
+        </div>
+      </div>
+      <div class="inner-body">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="inner-content">
+              <h4 class="inner-tittle">Keep in touch</h4>
+              <p> 110-220 Quisque diam odio, maximus ac
+                consectetur eu, 10260
+                auctor non lorem </p>
+              <p>You are NOT allowed to re-distribute Softy Pinko
+                template on any template collection websites
+                Thank you</p>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <form action="" class="inner-form">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <input type="text" placeholder="Full Name">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <input type="text" placeholder="Email-Address">
+                </div>
+                <div class="col-lg-12">
+                  <textarea name="" id="" placeholder="Your Message"></textarea>
+                </div>
+                <div class="col-12 ">
+                  <button class="btn text-white px-5 py-2" style="
+                            background: linear-gradient(-30deg, #f57f20, #d62b08);
+                            border-radius: 45px;
+                          ">
+                    Đăng ký tư vấn
+                  </button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--End section-four -->
+  <!-- Nút gọi điện -->
+  <div class="mobie-phone">
+    <a href="tel:0987654321" class="call-button">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/-bundle.min.js"></script>
+  <script src="/js/animate.js"></script>
+  <script src="/js/script.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+
+
+    /* Please ❤ this if you like it! */
+
+
+    (function ($) {
+      "use strict";
+
+      //Parallax            
+
+      function scrollBanner() {
+        $(document).on('scroll', function () {
+          var scrollPos = $(this).scrollTop();
+          $('.parallax-fade-top').css({
+            'top': (scrollPos / 2) + 'px',
+            'opacity': 1 - (scrollPos / 700)
+          });
+          $('.parallax-00').css({
+            'top': (scrollPos / -3.5) + 'px'
+          });
+          $('.parallax-01').css({
+            'top': (scrollPos / -2.8) + 'px'
+          });
+          $('.parallax-top-shadow').css({
+            'top': (scrollPos / -2) + 'px'
+          });
+        });
+      }
+      scrollBanner();
+
+      //Page cursors
+
+      document.getElementsByTagName("body")[0].addEventListener("mousemove", function (n) {
+        t.style.left = n.clientX + "px",
+          t.style.top = n.clientY + "px",
+          e.style.left = n.clientX + "px",
+          e.style.top = n.clientY + "px",
+          i.style.left = n.clientX + "px",
+          i.style.top = n.clientY + "px"
+      });
+      var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+      function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+      }
+      function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+      }
+      s();
+      for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+      }
+      function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+      }
+
+
+      //Scroll back to top
+
+      $(document).ready(function () {
+        var offset = 300;
+        var duration = 400;
+        jQuery(window).on('scroll', function () {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.scroll-to-top').addClass('active-arrow');
+          } else {
+            jQuery('.scroll-to-top').removeClass('active-arrow');
+          }
+        });
+        jQuery('.scroll-to-top').on('click', function (event) {
+          event.preventDefault();
+          jQuery('html, body').animate({ scrollTop: 0 }, duration);
+          return false;
+        })
+
+
+        /* Hero Case study images */
+
+        $('.case-study-name:nth-child(1)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(1)').addClass("show");
+          $('.case-study-name:nth-child(1)').addClass('active');
+        })
+        $('.case-study-name:nth-child(2)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(2)').addClass("show");
+          $('.case-study-name:nth-child(2)').addClass('active');
+        })
+        $('.case-study-name:nth-child(3)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(3)').addClass("show");
+          $('.case-study-name:nth-child(3)').addClass('active');
+        })
+        $('.case-study-name:nth-child(4)').on('mouseenter', function () {
+          $('.case-study-name.active').removeClass('active');
+          $('.case-study-images li.show').removeClass("show");
+          $('.case-study-images li:nth-child(4)').addClass("show");
+          $('.case-study-name:nth-child(4)').addClass('active');
+        })
+        $('.case-study-name:nth-child(1)').trigger('mouseenter')
+
+      });
+
+    })(jQuery); 
+  </script>
+
+
+</body>
+
+</html>
